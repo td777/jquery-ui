@@ -320,7 +320,7 @@ $.widget( "ui.resizable", $.ui.mouse, {
 		this._renderAxis( this.element );
 
 		this._handles = this._handles.add( this.element.find( ".ui-resizable-handle" ) );
-		this._handles.disableSelection();
+		// deprecated: this._handles.disableSelection();
 
 		this._handles.on( "mouseover", function() {
 			if ( !that.resizing ) {
